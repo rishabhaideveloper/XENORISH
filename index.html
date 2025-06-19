@@ -72,13 +72,14 @@
             border-radius: 16px;
             backdrop-filter: blur(10px);
             box-shadow: 
-                0 0 30px rgba(0, 240, 255, 0.3),
-                0 0 60px rgba(168, 85, 247, 0.2);
+            0 0 30px rgba(0, 240, 255, 0.3),
+            0 0 60px rgba(168, 85, 247, 0.2);
             border: 1px solid rgba(0, 240, 255, 0.2);
             overflow: hidden;
             display: flex;
             flex-direction: column;
             animation: terminal-appear 1s cubic-bezier(0.22, 1, 0.36, 1);
+        
         }
         
         @keyframes terminal-appear {
@@ -286,6 +287,7 @@
         }
         
         .input-area {
+            flex-shrink: 0;
             padding: 16px;
             border-top: 1px solid rgba(0, 240, 255, 0.1);
             background: rgba(20, 20, 40, 0.6);
